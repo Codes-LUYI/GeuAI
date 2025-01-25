@@ -1,11 +1,11 @@
-# SelentSDK IA
+# GeuAI IA
 
-Welcome! The SelentSDK is a virtual assistant designed to answer your questions in a friendly, fun, and interactive way. Created to be your digital companion, it provides engaging responses to make your experience more enjoyable.
+Welcome! The GeuAI is a virtual assistant designed to answer your questions in a friendly, fun, and interactive way. Created to be your digital companion, it provides engaging responses to make your experience more enjoyable.
 
 - **Model Used**: By default, we use the **meta-llama/Llama-3.2-3B-Instruct** model, but you can easily change it to any other model of your choice.
 
 ## Twitter
-[SelentSDK](https://x.com/SelentSDK)
+[GeuAI](https://x.com/GeuAI)
 
 ## Recommended
 
@@ -16,8 +16,8 @@ Welcome! The SelentSDK is a virtual assistant designed to answer your questions 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/SelentSDK/SelentSDK.git
-   cd SelentSDK
+   git clone https://github.com/Codes-LUYI/GeuAI
+   cd GeuAI
    ```
 
 2. **Install the dependencies**:
@@ -36,7 +36,7 @@ Welcome! The SelentSDK is a virtual assistant designed to answer your questions 
      ```
    > **Note**: You can get your Hugging Face API token at [Hugging Face Tokens](https://huggingface.co/settings/tokens).
 
-   > **Note**: If you're using a graphical interface with `Python SelentSDK.py` you don't need the Hugging Face token; it works without it.
+   > **Note**: If you're using a graphical interface with `Python GeuAI.py` you don't need the Hugging Face token; it works without it.
 
 ## How to Run
 
@@ -56,7 +56,7 @@ Open your browser and go to `http://localhost:7860` to interact with the AI chat
 To start the server and open the graphical interface, simply run the following command:
 
 ```bash
-python SelentSDK.py
+python GeuAI.py
 ```
 
 This will launch the application with the virtual assistant interface, where you can interact using voice or buttons.
@@ -91,8 +91,8 @@ from gradio_client import Client
 
 # ==========TEST API==========
 
-def response_SelentSDK(input_text):
-    client = Client("wendellast/SelentSDK")
+def response_GeuAI(input_text):
+    client = Client("wendellast/GeuAI")
     result = client.predict(
         message=input_text,
         max_tokens=512,
@@ -104,7 +104,7 @@ def response_SelentSDK(input_text):
 
 # Example call:
 input_text = "Hello, how are you?"
-response = response_SelentSDK(input_text)
+response = response_GeuAI(input_text)
 print("AI Response:", response)
 ```
 
@@ -114,7 +114,7 @@ You can also use the model directly via LangChain:
 
 - **Define the model** you want to use, such as `meta-llama/Llama-3.2-3B-Instruct`.
 - Configure your access token in the `.env` file.
-- Instantiate the wrapper for the model using the `SelentSDKChat` class.
+- Instantiate the wrapper for the model using the `GeuAIChat` class.
 
 ### Supported Parameters:
 - `temperature`: Controls the randomness of the response.
@@ -125,10 +125,10 @@ You can also use the model directly via LangChain:
 **Example usage**:
 ```python
 from util.token_access import load_token
-from your_package import SelentSDKChat
+from your_package import GeuAIChat
 
 token = load_token()
-chatbot = SelentSDKChat(auth_token=token)
+chatbot = GeuAIChat(auth_token=token)
 
 while True:
     question = input("Ask here: ")
