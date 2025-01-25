@@ -5,7 +5,7 @@ Welcome! The GeuAI is a virtual assistant designed to answer your questions in a
 - **Model Used**: By default, we use the **meta-llama/Llama-3.2-3B-Instruct** model, but you can easily change it to any other model of your choice.
 
 ## Twitter
-[GeuAI](https://x.com/GeuAI)
+[GeuAI](https://x.com/GeuAISOL)
 
 ## Recommended
 
