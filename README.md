@@ -5,7 +5,7 @@ Welcome! The SelentSDK is a virtual assistant designed to answer your questions 
 - **Model Used**: By default, we use the **meta-llama/Llama-3.2-3B-Instruct** model, but you can easily change it to any other model of your choice.
 
 ## Twitter
-SelentSDK(https://x.com/SelentSDK)
+[SelentSDK](https://x.com/SelentSDK)
 
 ## Recommended
 
