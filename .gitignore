@@ -1,0 +1,13 @@
+venv/
+.env
+.pytest_cache
+cookies_snapshot
+__pycache__
+*db
+config/log
+trash
+chat.html
+*.log
+erro.log
+trash/
+
